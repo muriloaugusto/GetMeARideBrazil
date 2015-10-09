@@ -4,6 +4,9 @@
  */
 package getmearidex;
 
+import ui.CadastroTaxista;
+import ui.Principal;
+
 /**
  *
  * @author SYSTEM
@@ -15,5 +18,11 @@ public class GetMeARideX {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                new Principal().setVisible(true);
+            }
+        });
     }
 }
